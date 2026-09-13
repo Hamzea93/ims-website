@@ -9,3 +9,5 @@ Thumbs.db
 __pycache__/
 # Legal agreements: never publish
 source/legal/
+# Single-file bundle (large, built on demand)
+dist/
