@@ -414,12 +414,17 @@ def build_service(s, i):
 {extra}
 """
     nav = f"""
-<section class="cta-band">
-  <div class="wrap grid-2 v-center">
-    <div class="cta-block"><span>Contact Us</span></div>
-    <div class="cta-text">
-      <p class="lead">{esc(s['closing'])}</p>
-      <a class="mail" href="mailto:{esc(SITE['email'])}?subject={esc('IMS enquiry: ' + plain(s['title']))}">{esc(SITE['email'])}</a>
+<section class="cta-close">
+  <div class="chev-bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i></div>
+  <div class="wrap cta-inner">
+    <div class="cta-copy">
+      <p class="kicker light">Next step</p>
+      <h2>{esc(s['closing'])}</h2>
+      <p>Tell us about your line, your targets and your constraints. We come back with a scoped proposal, not a sales call.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-light" href="{rel}contact.html?service={s['slug']}">Request a scoped proposal {ARROW}</a>
+      <a class="cta-alt" href="mailto:{esc(SITE['email'])}?subject={esc('IMS enquiry: ' + plain(s['title']))}">or e-mail {esc(SITE['email'])}</a>
     </div>
   </div>
 </section>
@@ -439,6 +444,7 @@ def build_contact():
     addr = "<br>".join(esc(a) for a in SITE["address_lines"])
     phone = f'<div class="c-item"><h3>Phone</h3><p><a href="tel:{esc(SITE["phone"])}">{esc(SITE["phone"])}</a></p></div>' if SITE.get("phone") else ""
     svc_opts = "".join(f'<li><a href="services/{s["slug"]}.html">{esc(s["short"])}</a></li>' for s in SERVICES)
+    topics = json.dumps({x["slug"]: x["title"] for x in SERVICES})
     cp = SITE.get("contact_person")
     person_block = f'<div class="c-item"><h3>Your contact</h3><p><strong>{esc(cp["name"])}</strong><br><span class="muted">{esc(cp["title"])}</span></p></div>' if cp else ""
     body = f"""
@@ -454,6 +460,7 @@ def build_contact():
 <section class="contact">
   <div class="wrap grid-2 gap">
     <div class="panel c-card">
+      <p id="enquiry-topic" class="topic" hidden>Enquiry about: <strong></strong></p>
       {person_block}
       <div class="c-item"><h3>E-mail</h3><p><a class="mail" href="mailto:{esc(SITE['email'])}">{esc(SITE['email'])}</a></p></div>
       {phone}
@@ -473,6 +480,7 @@ def build_contact():
     </div>
   </div>
 </section>
+<script>window.__SERVICE_TITLES__ = {topics};</script>
 """
     title = f"Contact — {SITE['full_name']}"
     write("contact.html", head(title, "Contact Integrated Manufacturing Systems (IMS) in Saudi Arabia for advanced manufacturing engineering, simulation and optimization services.", rel, "contact.html") + header(rel, "contact") + body + footer(rel))
