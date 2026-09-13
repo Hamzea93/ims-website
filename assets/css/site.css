@@ -85,7 +85,12 @@ section { padding: 72px 0; }
 /* header */
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.brand { display: inline-flex; align-items: center; gap: 14px; }
 .brand img { width: 150px; height: auto; }
+.brand-desc { display: flex; flex-direction: column; line-height: 1.3; padding-left: 14px; border-left: 1px solid var(--silver); }
+.brand-desc b { font-family: var(--font-head); font-weight: 700; font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); }
+.brand-desc i { font-style: normal; font-family: var(--font-head); font-weight: 500; font-size: .6rem; letter-spacing: .3em; text-transform: uppercase; color: var(--silver); }
+@media (max-width: 640px) { .brand-desc { display: none; } }
 .nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 4px; }
 .nav > ul > li > a { display: block; padding: 10px 14px; font-family: var(--font-head); font-weight: 600; font-size: .9rem; color: var(--navy-deep); border-radius: var(--radius); }
 .nav > ul > li > a:hover, .nav > ul > li > a.active { color: var(--blue); }
