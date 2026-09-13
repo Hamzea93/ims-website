@@ -92,7 +92,6 @@ section { padding: 72px 0; }
 .nav .cta { margin-left: 10px; }
 .nav .cta a { padding: 11px 18px; color: #fff; }
 .nav .cta a:hover { color: #fff; }
-.nav .cta a.active { background: var(--blue); }
 .has-sub { position: relative; }
 .nav .sub {
   position: absolute; top: 100%; left: 0; min-width: 320px; background: #fff; border: 1px solid var(--line);
