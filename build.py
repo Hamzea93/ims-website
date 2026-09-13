@@ -98,8 +98,7 @@ def header(rel, active):
           <ul class="sub">{items}<li class="all"><a href="{rel}services/index.html">All services {ARROW}</a></li></ul>
         </li>
         <li><a href="{rel}index.html#about"{cls('about')}>About</a></li>
-        <li><a href="{rel}contact.html"{cls('contact')}>Contact</a></li>
-        <li class="cta"><a class="btn btn-primary" href="{rel}contact.html">Contact us {ARROW}</a></li>
+        <li class="cta"><a class="btn btn-primary{' active' if active == 'contact' else ''}" href="{rel}contact.html">Contact us {ARROW}</a></li>
       </ul>
     </nav>
   </div>

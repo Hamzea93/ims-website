@@ -92,6 +92,7 @@ section { padding: 72px 0; }
 .nav .cta { margin-left: 10px; }
 .nav .cta a { padding: 11px 18px; color: #fff; }
 .nav .cta a:hover { color: #fff; }
+.nav .cta a.active { background: var(--blue); }
 .has-sub { position: relative; }
 .nav .sub {
   position: absolute; top: 100%; left: 0; min-width: 320px; background: #fff; border: 1px solid var(--line);
@@ -274,7 +275,7 @@ section { padding: 72px 0; }
 @media (max-width: 1000px) {
   .grid-3 { grid-template-columns: 1fr 1fr; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
-  .nav .cta { display: none; }
+  .nav .cta a { padding: 9px 14px; font-size: .85rem; }
 }
 @media (max-width: 820px) {
   section { padding: 56px 0; }
@@ -301,7 +302,8 @@ section { padding: 72px 0; }
   .nav .sub { position: static; display: none; border: 0; box-shadow: none; padding: 0 0 8px; background: var(--gray); }
   .nav .has-sub:hover .sub, .nav .has-sub:focus-within .sub { display: none; }
   .nav .has-sub.open .sub, .nav .has-sub.open:hover .sub { display: flex; }
-  .nav .cta { display: block; padding: 8px 24px; }
+  .nav .cta { display: block; padding: 10px 24px 14px; }
+  .nav .cta a { width: 100%; justify-content: center; padding: 14px 18px; font-size: .95rem; }
 }
 @media (max-width: 560px) {
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
