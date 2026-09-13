@@ -246,7 +246,6 @@ def build_home():
         <img src="assets/img/hero-dashboard-panel.png" alt="" width="1100" height="790">
       </picture>
       <p class="vertical">Automate<br>Optimize<br>Digitalize<br>for a<br>stronger<br>tomorrow</p>
-      <div class="vision-card"><span>Advancing Saudi industry</span><strong>Vision 2030</strong></div>
     </div>
   </div>
 </section>
