@@ -301,8 +301,11 @@ section { padding: 72px 0; }
   .nav .sub { position: static; display: none; border: 0; box-shadow: none; padding: 0 0 8px; background: var(--gray); }
   .nav .has-sub:hover .sub, .nav .has-sub:focus-within .sub { display: none; }
   .nav .has-sub.open .sub, .nav .has-sub.open:hover .sub { display: flex; }
-  .nav .cta { display: block; padding: 10px 24px 14px; }
-  .nav .cta a { width: 100%; justify-content: center; padding: 14px 18px; font-size: .95rem; }
+  /* in the phone menu the call-to-action is a plain entry like the others */
+  .nav .cta { display: block; margin: 0; padding: 0; }
+  .nav .cta a { display: block; width: auto; background: none; border: 0; border-radius: 0; color: var(--navy-deep); padding: 14px 24px; font-size: .9rem; font-weight: 600; text-align: left; transform: none; }
+  .nav .cta a:hover { background: none; color: var(--blue); transform: none; }
+  .nav .cta .arr { display: none; }
 }
 @media (max-width: 560px) {
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
