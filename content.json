@@ -1,0 +1,390 @@
+{
+  "site": {
+    "name": "IMS",
+    "full_name": "Integrated Manufacturing Systems",
+    "slogan": "Think Forward.",
+    "domain": "https://imsystems.com.sa",
+    "description": "Integrated Manufacturing Systems (IMS) delivers advanced manufacturing engineering, simulation and optimization services in the Kingdom of Saudi Arabia: throughput and buffer optimization, logistics and material flow, ergonomics simulation, press transfer digital twins and continuous improvement.",
+    "email": "info@imsystems.com.sa",
+    "phone": "",
+    "address_lines": ["Kingdom of Saudi Arabia"],
+    "contact_note": "Address, phone and e-mail to be confirmed from the IMS registration documents.",
+    "taglines": {
+      "hero_kicker": "Engineer the decision. De-risk the capital.",
+      "hero_title": "Driving industrial transformation, from concept to execution",
+      "hero_lead": "IMS brings advanced manufacturing engineering, simulation and optimization services to the Kingdom of Saudi Arabia: from product design and process feasibility to logistics, ergonomics and press automation.",
+      "pillars": ["Design.", "Simulate.", "Optimize."],
+      "people": "People. Systems. Progress. Together.",
+      "footer": "A stronger tomorrow through smarter manufacturing."
+    }
+  },
+  "about": {
+    "kicker": "About IMS",
+    "heading": "From design to production, we support our partners through every stage",
+    "intro": "**Integrated Manufacturing Systems (IMS)** is a Saudi engineering and consulting company that provides a comprehensive range of body, chassis, and engineering support and solutions to manufacturers in the Kingdom and the region.",
+    "paragraphs": [
+      "**IMS** delivers specialized services to support the design and manufacture of vehicle body systems, components, assemblies, and complete vehicle frames.",
+      "We guide our partners from concept to execution; optimizing product design for manufacturing, managing global programs, and ensuring quality across every stage of the project.",
+      "For customized needs, IMS taps into an extensive network of Subject Matter Experts to deliver tailored, high-impact solutions that drive operational excellence."
+    ],
+    "services_heading": "Advanced Engineering Services",
+    "services_lead": "IMS can help manufacturers achieve world-class manufacturing excellence."
+  },
+  "services": [
+    {
+      "slug": "advanced-manufacturing-engineering",
+      "num": 1,
+      "title": "Advanced Manufacturing Engineering",
+      "short": "Advanced Manufacturing Engineering",
+      "subtitle": "Optimizing Production Efficiency, Quality, and Scalability",
+      "blurb": "Product design analysis and manufacturing feasibility studies, Geometric Dimensioning and Tolerancing (GD&T), joining technologies, error proofing and global technical alignment. Specializing in process & layout development optimizing for resource utilization, and throughput.",
+      "card_icon": "555bf17d9e",
+      "hero_img": "hero-robot-arm.png",
+      "hero_alt": "Industrial robot arm",
+      "question": "Are Your Manufacturing Processes Optimized for Maximum Efficiency?",
+      "pains": [
+        "Not optimized **product design** leads to inefficient manufacturing",
+        "Poorly planned **layouts** causing space and resource inefficiencies",
+        "**Process** inefficiencies impacting cycle times and production throughput",
+        "**Bottlenecks** and **capacity constraints** limiting scalability",
+        "**Variations** in product quality due to unoptimized process flows",
+        "Ineffective **resource utilization** leading to increased costs",
+        "Lack of **standardization** affecting manufacturing alignment",
+        "Unvalidated **production methods** causing unforeseen downtime and redesign expenses"
+      ],
+      "scope_heading": "What we cover",
+      "scope": [
+        "Cycle time chart, build sequence, system layout",
+        "Value Added Work metrics from detailed Team Member and Capital utilization",
+        "Global technical assembly process alignment",
+        "Quality Spill prevention & Fool Proofing",
+        "PFMEA, EFMEA development",
+        "GD&T analysis & manufacturing feasibility studies"
+      ],
+      "inputs_heading": "**Key Inputs** Required for a Tailored Manufacturing Strategy",
+      "inputs": [
+        {"title": "3D Product Data", "desc": "Digital representation for design validation and feasibility analysis", "icon": "0b4bd03a4e"},
+        {"title": "Volume Targets", "desc": "Required annual and weekly throughput production expectations", "icon": "41203806d0"},
+        {"title": "GD&T Specifications", "desc": "Precision tolerances and dimensional control requirements", "icon": "f5a8e29a06"},
+        {"title": "Operational Constraints", "desc": "Floor space, labor, and capital investment considerations", "icon": "00d7991309"}
+      ],
+      "deliverables_heading": "**Deliverables:** Solutions That Translate into Results",
+      "deliverables": [
+        {"title": "Product Design and feasibility support", "desc": "Ensures manufacturable product & process designs while minimizing costly **redesigns and implementation risks.**", "icon": "f4f9633669"},
+        {"title": "Comprehensive Quality Assurance & Risk Mitigation", "desc": "PFMEA and GD&T-based analysis proactively prevent defects and reduce **quality risks**. Process fastening analysis with GD&T", "icon": "bacca7d445"},
+        {"title": "Validated & Scalable Manufacturing Process", "desc": "Optimized workflows eliminate inefficiencies and enable seamless **scaling** and increased throughput.", "icon": "0c6931f38f"},
+        {"title": "Global Program Management & Multi-Region Alignment", "desc": "**Standardized** production practices improve consistency and efficiency across global sites.", "icon": "0feed942f0"},
+        {"title": "Advanced Process Development", "desc": "Streamlined processes reduce **cycle times** and maximize output with minimal downtime.", "icon": "07626a2f41"},
+        {"title": "Operational Standards & Best Practices", "desc": "Tooling and assembly guidelines reinforce **process efficiency** and ensure implementation consistency.", "icon": "97273c6ba9"},
+        {"title": "Strategic Layouts & 3D System Design", "desc": "**Space-efficient designs** enhance layout planning, reach analysis, and resource utilization. Efficient planning of process material.", "icon": "c81482b721"},
+        {"title": "Resource & Manpower Optimization", "desc": "Detailed utilization analysis supports lean operations and effective **resource allocation**.", "icon": "ad7ed56f61"},
+        {"title": "Advanced Robotics & Joining Technology Validation", "desc": "Robotic and joining process studies enhance **manufacturing precision** and product quality.", "icon": "6d44d7b43f"},
+        {"title": "Cost-Effective Capital & Implementation Strategies", "desc": "Accurate planning of space, manpower, and tooling drives optimized investment and **execution**.", "icon": "c4eb06c488"}
+      ],
+      "gallery": [
+        {"src": "ame-3d-line.jpg", "caption": "3D system layout of a robotic assembly line"},
+        {"src": "ame-cell-3d.png", "caption": "Robotic cell process and layout development"}
+      ],
+      "closing": "Boost output & reduce waste with engineered production strategies tailored to your scalability and quality goals."
+    },
+    {
+      "slug": "logistics-material-flow-optimization",
+      "num": 2,
+      "title": "Logistics & Material Flow Optimization",
+      "short": "Logistics & Material Flow Optimization",
+      "subtitle": "Optimizing Routing, Fleet Performance, and Material Throughput",
+      "blurb": "Plan For Every Part (PFEP), Value Stream Mapping (VSM), shared resource scheduling, min/max lot sizes, logistic conveyance strategies, route planning, long cycle standardized work, traffic simulations.",
+      "card_icon": "31b74d6e16",
+      "hero_img": "hero-agv.png",
+      "hero_alt": "Automated guided vehicle carrying a load",
+      "question": "Are Your Logistics Strategies Causing Efficiency Losses?",
+      "pains": [
+        "**Inefficient transport routes** leading to increased costs and delays",
+        "**Underutilized fleet** resulting in idle transporters and wasted resources",
+        "**Congestion & bottlenecks** slowing down material movement and production",
+        "**Excessive WIP inventory** consuming space and increasing operational costs",
+        "**Lack of proactive scenario** planning causing unplanned disruptions"
+      ],
+      "scope_heading": "What we cover",
+      "scope": [
+        "Plan For Every Part (PFEP), bin/tote size selection, Home for Every Part (HFEP)",
+        "Value stream mapping",
+        "Optimal shared resource scheduling (Press, DCMs, Laser cutting cells)",
+        "Min/Max lot sizes, WIP, safety stock levels, material location maps & plant layout",
+        "Logistic conveyance strategy (material flow strategies, AGV/tugger/forklift studies)",
+        "Long cycle resource standard work & utilization",
+        "Minimum resource requirements (forklifts/tuggers, trucks, trailers, racks/bins, and Team Members)",
+        "Route planning",
+        "Plant traffic & material flow simulations"
+      ],
+      "inputs_heading": "**Key Inputs** Required for Smart Simulation & Optimization",
+      "inputs": [
+        {"title": "Factory Layout & PFEP", "desc": "Defining storage, flow, and handling strategies", "icon": "47a0b7becc"},
+        {"title": "Production & Forecasts", "desc": "Understanding volume fluctuations, scheduling Demand Forecasts", "icon": "00997bc025"},
+        {"title": "Transport & Resource Data", "desc": "Evaluating fleet types, sizes, and utilization rates", "icon": "1667538c1f"},
+        {"title": "Inventory Management", "desc": "Assessing WIP, buffer stock, and replenishment schedules", "icon": "aae17ad589"}
+      ],
+      "deliverables_heading": "**Deliverables:** Enhancing Logistics Performance Through Simulation & Analysis",
+      "deliverables": [
+        {"title": "3D Dynamic Simulation Model & Video Report", "desc": "Real-time, interactive model visualizing inefficiencies and improvements pre implementation, enabling **risk-free scenario testing**.", "icon": "4e124e598d"},
+        {"title": "Resource Allocation Plan", "desc": "Efficient distribution of forklifts, tuggers, AGVs, bins, racks, and team members, maximizing **output** while maintaining **cost-effectiveness**.", "icon": "dc634fd0d8"},
+        {"title": "Optimized Transport Route Plan", "desc": "Structured routes that minimize travel time, enhance material delivery efficiency, and reduce **material handling costs**.", "icon": "b2d281e11c"},
+        {"title": "Charger Placement & Smart Charging Strategy", "desc": "Optimized charging locations and energy-efficient practices that maximize transporter uptime and minimize **operational downtime**.", "icon": "82bf15579a"},
+        {"title": "Fleet Utilization & Right-Sizing Analysis", "desc": "Data-driven fleet recommendations that prevent underutilization, minimize unnecessary costs, and improve **resource effectiveness**.", "icon": "31b74d6e16"},
+        {"title": "Scenario-Based (What-if) Throughput Analysis", "desc": "Performance evaluation under varying production conditions, enabling future-ready logistics strategies and **scalability planning**.", "icon": "03ae9f5e51"},
+        {"title": "Bottleneck & Congestion Analysis", "desc": "Identification and resolution of workflow restrictions to eliminate **congestion** and ensure uninterrupted material flow operations.", "icon": "600a94865f"},
+        {"title": "WIP & Inventory Buffer Strategy Report", "desc": "Optimized stock levels and replenishment strategies that balance supply and demand and ensure **material availability.**", "icon": "eb9266febc"}
+      ],
+      "gallery": [
+        {"src": "lmf-sim-1.jpg", "caption": "3D dynamic plant simulation: routes, storage and flow"},
+        {"src": "lmf-sim-2.jpg", "caption": "Line-side delivery and workstation replenishment"},
+        {"src": "lmf-sim-3.jpg", "caption": "Tugger route simulation through the plant aisles"},
+        {"src": "lmf-sim-4.jpg", "caption": "Automated storage and retrieval with AGV drop-offs"}
+      ],
+      "closing": "Cut material handling costs and eliminate bottlenecks with data-driven logistics and fleet optimization."
+    },
+    {
+      "slug": "throughput-buffer-optimization",
+      "num": 3,
+      "title": "Throughput & Buffer Optimization",
+      "short": "Throughput & Buffer Optimization",
+      "subtitle": "Optimize Your Production: Before You Build, While You Scale, or When You Need to Improve",
+      "blurb": "Predict manufacturing capacity, constraints and buffer optimization, bottleneck and critical station analysis, Jobs Per Hour (JPH) & Overall Equipment Effectiveness (OEE) calculations.",
+      "card_icon": "7455bfca77",
+      "hero_img": "hero-robot-arms-pair.png",
+      "hero_alt": "Pair of industrial robot arms",
+      "question": "What's Slowing Down Your Production?",
+      "pains": [
+        "**Bottlenecks** and flow restrictions limiting overall throughput",
+        "**Underutilization** or **overloading** of resources, leading to inefficiencies",
+        "**Starving** and **blocking** conditions disrupting workflow balance",
+        "**Suboptimal buffer sizes** impacting production stability",
+        "**Incorrect assumptions** in production planning causing costly delays",
+        "Unverified logistics and **dispatching strategies**, increasing material handling costs",
+        "Traffic **congestion** and inefficient transport routes, reducing logistics service levels"
+      ],
+      "scope_heading": "What we cover",
+      "scope": [
+        "Detailed Station and resource utilization and charts",
+        "Bottleneck, critical station analysis",
+        "Overall machine throughput (JPH), system efficiency (OEE)",
+        "Statistical analysis (throughput distribution chart)",
+        "Buffer optimization",
+        "“Rhythm” analysis, “Slack Time” analysis",
+        "Comparison of dispatching & logistics policies (docking, transportation, material flow strategies)",
+        "Mean buffer size, starving / blocking / utilization of resources, throughput simulation",
+        "Minimum resource requirements (forklifts/tuggers, trucks, trailers, racks/bins, and Team Members)"
+      ],
+      "inputs_heading": "**Key Inputs** Required for Smart Simulation & Optimization",
+      "inputs": [
+        {"title": "Process Flow & Layout Details", "desc": "Understanding how operations are structured", "icon": "be047fa95c"},
+        {"title": "Equipment & Resource Specifications", "desc": "Data on machines, labor, material handling, and automation", "icon": "8e01e36983"},
+        {"title": "Production Volume & Cycle Time", "desc": "Required throughput rates to meet demand", "icon": "ad07cd07dd"},
+        {"title": "Logistics & Material Flow Details", "desc": "Transportation methods, buffer sizes, and warehouse strategies", "icon": "1667538c1f"},
+        {"title": "Material-Flow Definition & SKU-Level", "desc": "Mapping each Stock Keeping Unit (SKU), location, and conveyance method", "icon": "c1e6b8b1ef"},
+        {"title": "Historical Traffic & Congestion", "desc": "Real-world congestion conditions for accurate flow simulation", "icon": "51346d2171"}
+      ],
+      "deliverables_heading": "**Deliverables:** Data-Driven Solutions That Transform Production Efficiency",
+      "deliverables": [
+        {"title": "Validated Simulation Model & Video Report", "desc": "A digital replica of your production system that visualizes material flow, layout interactions, and inefficiencies, forming the foundation for all **improvement strategies** and scenario testing.", "icon": "e5001feaad"},
+        {"title": "Work in Process (WIP) & Line-Side Inventory Optimization", "desc": "Calibrate buffer sizes and staging logic to reduce congestion, eliminate shortages, and align with takt time **for balanced and synchronized production.**", "icon": "ccd4ab29f4"},
+        {"title": "What-If Scenario & Shift Analysis", "desc": "Evaluate multiple production conditions such as shift configurations, equipment breakdowns, and demand fluctuations to ensure adaptable, **resilient**, and future-ready **operations**.", "icon": "bcd953792a"},
+        {"title": "JPH & OEE Improvement Framework", "desc": "Validate and enhance Jobs Per Hour (JPH) and Overall Equipment Effectiveness (OEE) to ensure **alignment with production targets** and operational efficiency.", "icon": "7455bfca77"},
+        {"title": "Bottleneck & Workstation Load Analysis", "desc": "Identify production constraints and high-load areas at workstations to resolve flow interruptions and **stabilize throughput** across the line.", "icon": "6343b5310c"},
+        {"title": "Production Flow & Task Sequencing Strategy", "desc": "Refine the sequence of operations and process hand-offs to reduce unnecessary movements, improve layout connectivity, and enhance overall **workflow**.", "icon": "82410d8406"},
+        {"title": "Operator & Equipment Utilization Study", "desc": "Analyze labor, machinery, and workstation usage patterns to maximize **value-added time**, reduce idle capacity, and improve the overall efficiency of available resources.", "icon": "c09c09f8b4"},
+        {"title": "Return on Investment (ROI) & Cost Trade-Off Analysis", "desc": "Assess various production scenarios and layout options to identify the most **cost-effective solutions** with strong operational performance and long-term value.", "icon": "2571192db2"}
+      ],
+      "gallery": [
+        {"src": "tbo-layout-sim.jpg", "caption": "Discrete-event simulation model of a complete production line", "wide": true}
+      ],
+      "closing": "Prevent downtime and delays through simulation-validated planning and resource optimization."
+    },
+    {
+      "slug": "ergonomics-simulation-human-factors",
+      "num": 4,
+      "title": "Ergonomics Simulation & Analysis with Human Factors Engineering",
+      "short": "Ergonomics Simulation & Analysis",
+      "subtitle": "Optimizing Workstation Design for Safety, Efficiency, and Injury Prevention",
+      "blurb": "Human reach 3D simulations, and mitigate risks to human-system performance and worker well-being, Ergonomics Failure Modes and Effects Analysis (EFMEA).",
+      "card_icon": "2e7cdf34a5",
+      "hero_img": "hero-ergonomics-worker.png",
+      "hero_alt": "Worker lifting a part with the spine and joints highlighted",
+      "question": "Are Your Workstations Designed for Worker Safety & Efficiency?",
+      "pains": [
+        "**Hazardous postures** & excessive force leading to increased injury risk",
+        "**Repetitive motion** & high-frequency movements causing fatigue and strain",
+        "**Collisions** between workers & workstation components, impacting productivity",
+        "**Blind load handling** & **incorrect load positioning**, reducing efficiency and safety",
+        "**High energy expenditure** over shifts, leading to reduced worker performance",
+        "**Inconsistent movement times**, affecting overall cycle time and productivity"
+      ],
+      "scope_heading": "What we cover",
+      "scope": [
+        "Ergonomics FMEA (EFMEA) to identify human factors failures and test solutions before tool is built",
+        "Hazardous posture, forces, frequency of movements",
+        "Collisions between human and workstation components",
+        "Blind load / incorrect load",
+        "Energy Expenditure Prediction over shift",
+        "Inconsistent movement times"
+      ],
+      "inputs_heading": "**Key Inputs** Required for Human Factors Optimization",
+      "inputs": [
+        {"title": "3D Fixture & Workstation Designs", "desc": "Digital models for workstation layout evaluation", "icon": "0b4bd03a4e"},
+        {"title": "Worker Movement & Accessibility", "desc": "Analyzing worker movement, reach, and workflow constraints", "icon": "9166f26af4"},
+        {"title": "Operational Tasks & Cycle Time Data", "desc": "Identifying high-frequency motions and potential strain points", "icon": "c6d1acfe0c"},
+        {"title": "Process & Layout Specifications", "desc": "Ensuring workstation integration within production constraints", "icon": "60a6e636e4"},
+        {"title": "Historical Ergonomic Injury & Performance", "desc": "Providing insights into past issues and improvement areas", "icon": "5271aeea58"}
+      ],
+      "deliverables_heading": "**Deliverables:** Human Factors Design Validation & Injury Prevention",
+      "deliverables": [
+        {"title": "Validated 3D Human Simulation Models", "desc": "High-detail digital simulations of team members’ postures, forces, and movements to confirm **workstation feasibility** before physical implementation.", "icon": "a3bca53744"},
+        {"title": "Hazardous Posture & Collision Risk Reports", "desc": "Identify **ergonomic risks** such as awkward postures, excessive forces, limited visibility, and restricted access, prior to workstation deployment.", "icon": "2e7cdf34a5"},
+        {"title": "Energy Expenditure & Fatigue Analysis", "desc": "Evaluate physical effort and fatigue over time to optimize task efficiency and reduce **long-term strain on workers.**", "icon": "15d07d6160"},
+        {"title": "Blind Load & Incorrect Load Handling Assessment", "desc": "Detect handling issues such as non-visible loads, awkward angles, and inconsistent grips to ensure safe and **repeatable material handling**.", "icon": "7d5b3f14ca"},
+        {"title": "Ergonomic Failure Mode & Effects Analysis (EFMEA)", "desc": "Conduct proactive risk assessments to prevent **ergonomic design flaws** and reduce the potential for musculoskeletal injuries.", "icon": "cf407287dc"},
+        {"title": "Before & After Ergonomic Improvement Report", "desc": "Present side-by-side analysis of design modifications to demonstrate measurable ergonomic gains and justify **redesign investments.**", "icon": "a109322ac4"},
+        {"title": "What-If Scenario Testing for Injury Prevention", "desc": "Test multiple workstation design alternatives through simulation to ensure optimal design under **varying operating conditions**.", "icon": "bcd953792a"},
+        {"title": "Reach Envelope & Accessibility Zone Mapping", "desc": "Analyze workstation reach zones based on anthropometric data to ensure comfortable access for a wide range of operators, reducing **overreach** and improving **task ergonomics**", "icon": "5a504c1584"}
+      ],
+      "case": {
+        "heading": "EFMEA case: from red to green",
+        "steps": [
+          {"src": "efmea-1.jpg", "label": "Initial State", "tag": "EFMEA RPN RED", "tag_class": "red", "desc": "Collision between Team Member and tool base. High force, awkward back, shoulder postures."},
+          {"src": "efmea-2.jpg", "label": "Initial State", "tag": "Collision detected", "tag_class": "red", "desc": "Team Member contact with the tool base at floor level."},
+          {"src": "efmea-3.jpg", "label": "Potential Failures", "tag": "Risk", "tag_class": "amber", "desc": "Injuries to legs, shoulders, back. Inconsistent / longer TM cycle time."},
+          {"src": "efmea-4.jpg", "label": "Improvement", "tag": "EFMEA RPN GREEN", "tag_class": "green", "desc": "Tool base redesigned in CAD, collisions eliminated."}
+        ]
+      },
+      "gallery": [
+        {"src": "ergo-before-1.jpg", "caption": "Before: awkward back posture and reach"},
+        {"src": "ergo-after-1.jpg", "caption": "After: neutral posture with redesigned fixture"},
+        {"src": "ergo-before-2.jpg", "caption": "Before: shoulder strain at the workstation"},
+        {"src": "ergo-after-2.jpg", "caption": "After: validated reach and accessibility"}
+      ],
+      "closing": "Reduce injuries and increase productivity by designing ergonomic workstations validated before build."
+    },
+    {
+      "slug": "continuous-improvement-processing",
+      "num": 5,
+      "title": "Continuous Improvement Processing",
+      "short": "Continuous Improvement Processing",
+      "subtitle": "Maximizing Production Efficiency & Cost Savings Through Structured Process Optimization",
+      "blurb": "Throughput improvement of existing lines, resource re-deployment, volume increase/decrease, engineering changes, product design manufacturing cost reduction.",
+      "card_icon": "ccd4ab29f4",
+      "hero_img": "hero-dashboard.png",
+      "hero_alt": "Production performance dashboard",
+      "question": "Are Inefficiencies in Your Assembly Line Slowing Down Production?",
+      "pains": [
+        "**Limited throughput** & **process bottlenecks** impacting production goals",
+        "Underutilized **resources** & excessive **floor space** consumption increasing operational costs",
+        "Inefficiencies in **integrating new products** into existing production lines",
+        "Lack of structured **lean manufacturing processes** leading to inefficiencies",
+        "High **capital costs** for **expansion** or process modifications without clear ROI",
+        "**Inconsistent process improvements** due to lack of a data-driven Value Analysis/Value Engineering (VAVE) strategy"
+      ],
+      "scope_heading": "What we cover",
+      "scope": [
+        "Throughput improvement of existing lines",
+        "Feasibility and risk of integrating new product into existing assembly production line",
+        "Investigate Gun sections, end-effectors, robot reach, GEO-tooling, fencing",
+        "Capital considerations for volume increase or decrease, engineering changes"
+      ],
+      "inputs_heading": "**Key Inputs** Required for Process Optimization",
+      "inputs": [
+        {"title": "Existing Assembly Line Data", "desc": "Cycle times, production rates, workforce utilization, and known inefficiencies", "icon": "9115bf2639"},
+        {"title": "Awarded Program & Production Volume Requirements", "desc": "Future capacity planning and lean process development", "icon": "00d7991309"},
+        {"title": "Manufacturing Constraints & Capital Investment Plans", "desc": "Space, workforce, automation potential, and financial limitations", "icon": "555bf17d9e"},
+        {"title": "Material Flow & Logistics Data", "desc": "Identifying inefficiencies in part movement, staging, and workstation ergonomics", "icon": "8ad7393964"}
+      ],
+      "deliverables_heading": "**Deliverables:** Data-Driven Solutions That Transform Production Efficiency",
+      "deliverables": [
+        {"title": "VAVE Workshop & Optimization Proposal Roadmap", "desc": "Facilitated sessions that identify cost-saving and efficiency opportunities across your assembly lines, followed by **detailed proposals** outlining lead times, cost-saving estimates, and actionable implementation plans.", "icon": "09e6da3a9a"},
+        {"title": "Digital Tracking & Power BI–Integrated VAVE Collector", "desc": "Enable real-time visibility into improvement initiatives, implementation progress, and savings through a **centralized, digital dashboard**.", "icon": "1b2b082e2a"},
+        {"title": "Assembly Line Throughput & Bottleneck Analysis", "desc": "Analyze flow constraints and inefficiencies using real data to **improve line balance, reduce cycle times, and increase output.**", "icon": "fda9079abd"},
+        {"title": "Resource Allocation & Floor Space Optimization Plan", "desc": "Maximize the use of labor, capital equipment, and layout space to improve **operational efficiency** and reduce overhead costs.", "icon": "80886c148f"},
+        {"title": "Lean Process Development & Best Practices Implementation", "desc": "Introduce scalable lean production methods and **waste-reduction techniques** to ensure readiness before integrator kickoff.", "icon": "c046e5475d"},
+        {"title": "Ongoing Support & Monthly Follow-Up Strategy", "desc": "Structured **follow-up sessions** with plant teams to monitor progress, address roadblocks, and ensure execution stays on track.", "icon": "a470f61bee"}
+      ],
+      "compare": {
+        "heading": "Eliminate waste",
+        "before": {"src": "cip-layout-before.png", "src2": "cip-layout-before-b.jpg", "label": "55% Work; 40% Walk"},
+        "after": {"src": "cip-layout-after.jpg", "src2": "cip-layout-after-b.jpg", "label": "70% Work; 20% Walk"}
+      },
+      "gallery": [],
+      "closing": "Extend the life and performance of your existing production lines with targeted VAVE and lean solutions."
+    },
+    {
+      "slug": "machine-transfer-optimization-virtual-twin",
+      "num": 6,
+      "title": "Machine Transfer Optimization & Virtual Twin Development",
+      "short": "Machine Transfer Optimization & Virtual Twin",
+      "subtitle": "Optimizing Automation, Tooling, and Motion Efficiency",
+      "blurb": "Stamping press digital twin to optimize material transfer, predict Stroke Per Minute (SPM), interference analysis to optimize transfer tooling & dies, end-of-arm tooling concept, and bottle-neck analysis for system balancing.",
+      "card_icon": "86a2eb53f9",
+      "hero_img": "hero-press-robots.png",
+      "hero_alt": "Stamping press with two transfer robots",
+      "question": "Is Your Press Transfer System Optimized for Maximum Performance?",
+      "pains": [
+        "**Inefficient die design** causing slow transfer times and inconsistent part quality",
+        "**Suboptimal press timing** leading to unnecessary downtime and production delays",
+        "**Unoptimized robot transfer** paths reducing strokes per minute (SPM)",
+        "**Inefficient offline programming**, increasing setup time and reducing throughput"
+      ],
+      "scope_heading": "What we cover",
+      "scope": [
+        "3D Robotic transfer simulations for maximum SPM",
+        "Die design feedback to optimize part transfer automation",
+        "Simulated press and robot motion timing (AVI and Static cycle time chart)",
+        "EOAT/Grippers 3D models and 2D drawing release package & BOM",
+        "Transfer robot offline programming"
+      ],
+      "inputs_heading": "**Key Inputs** Required for Optimal Press Simulation",
+      "inputs": [
+        {"title": "Die Models & Tooling Designs", "desc": "Ensuring compatibility and efficiency in the transfer process", "icon": "b24091165a"},
+        {"title": "Press Specifications & Motion Data", "desc": "SPM, press bed size, and stroke height", "icon": "8ca127e3ce"},
+        {"title": "Production & Performance Goals", "desc": "Required cycle times and quality benchmarks", "icon": "f9db89f0a8"},
+        {"title": "Robot & EOAT Specifications", "desc": "Defining transfer speeds, reach limits, and gripper capabilities", "icon": "6844d57aab"},
+        {"title": "Material Flow & Layout Constraints", "desc": "Evaluating space utilization and part handling strategies", "icon": "9d6dbbbf8b"}
+      ],
+      "deliverables_heading": "**Deliverables:** Simulation-Validated Press Optimization Solutions",
+      "deliverables": [
+        {"title": "Transfer Simulation Model", "desc": "A high-fidelity 3D simulation of robotic press transfers that optimizes motion paths, timing, and press-robot coordination to achieve **peak transfer efficiency**.", "icon": "80f2cfe963"},
+        {"title": "Transfer Robot Offline Programming Package", "desc": "Delivers pre-optimized robot motion paths, release points, and interference avoidance logic to **minimize setup time and eliminate on-site programming delays.**", "icon": "5d5f17ee6b"},
+        {"title": "Press Timing & Stroke Optimization Report", "desc": "Analyzes synchronization between the press and transfer robots to maximize strokes per minute (SPM), reduce idle time, and **boost overall press productivity**.", "icon": "5c1562a185"},
+        {"title": "Static Cycle Time Chart & Motion Timing AVI File", "desc": "Visualizes detailed **press cycle sequences**, enabling clear review of motion improvements through static charts and simulation video files.", "icon": "e38989cb05"},
+        {"title": "Die Design Feedback for Transfer Optimization", "desc": "Identifies design enhancements to stamping dies that improve **transfer reliability**, reduce misfeeds, and support faster, smoother part movement.", "icon": "86a2eb53f9"},
+        {"title": "Bill of Materials (BOM) for EOAT & Tooling Adjustments", "desc": "Includes a comprehensive BOM for EOAT components, grippers, and any required tooling modifications, streamlining sourcing and **cost control**.", "icon": "5549a8d141"},
+        {"title": "EOAT 3D Model Validation", "desc": "Provides accurate 3D CAD models of EOAT to ensure alignment with press operations and **minimize risk during part transfer**.", "icon": "609a362620"},
+        {"title": "Gripper System Drawings & Compatibility Review", "desc": "Supplies 2D drawings and performs compatibility analysis to ensure **precise part handling** and minimal adjustment needs.", "icon": "76d290265b"}
+      ],
+      "gallery": [
+        {"src": "mto-press-3d.jpg", "caption": "3D model of the press line and transfer automation"},
+        {"src": "mto-olp-screen.jpg", "caption": "Transfer robot offline programming and motion timing"},
+        {"src": "mto-transfer-sim.jpg", "caption": "Virtual material transfer simulation between dies"}
+      ],
+      "closing": "Increase strokes per minute (SPM) and eliminate inefficiencies with optimized press automation strategies."
+    },
+    {
+      "slug": "custom-solutions-special-projects",
+      "num": 7,
+      "title": "Custom Solutions and Special Projects",
+      "short": "Custom Solutions and Special Projects",
+      "subtitle": "Customized Services for Greenfield and Brownfield Environments",
+      "blurb": "Tailored solutions for unique challenges that fall outside our core offerings, designed to support both greenfield and brownfield environments with precision and flexibility.",
+      "card_icon": "bcd953792a",
+      "hero_img": "hero-body-in-white.png",
+      "hero_alt": "Vehicle body-in-white structure",
+      "special": true,
+      "intro": "We provide tailored solutions for unique challenges that fall outside our core offerings—designed to support both greenfield and brownfield environments with precision and flexibility.",
+      "samples_heading": "Samples of customized solutions previously delivered",
+      "samples": [
+        {"title": "Press & Crane Scheduling Simulation", "desc": "Developed simulation models to optimize interactions between presses and cranes, enhancing workflow efficiency and minimizing delays."},
+        {"title": "3D Vision & Inspection Systems", "desc": "Implemented and supported advanced automated inspection technologies to improve quality control and reduce rework."},
+        {"title": "Digital Layout Optimization Tool", "desc": "In collaboration with Global SMEs in Facilities and Logistics, contributed to the development of a digital layout planning tool deployed across multiple manufacturing divisions."},
+        {"title": "Multi-Level Facility Layout Concepts", "desc": "Supported the design of vertical and multi-floor facility layouts to maximize spatial efficiency and return on real estate investment."}
+      ],
+      "closing": "Bring us the challenge that does not fit a standard service. We will engineer the solution."
+    }
+  ]
+}

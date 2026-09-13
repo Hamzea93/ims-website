@@ -1,0 +1,9 @@
+# Large source decks and extraction scratch (kept locally, never published)
+source/decks/
+source/extract/
+# Abandoned WordPress experiment
+wordpress/
+# OS / editor
+Thumbs.db
+.DS_Store
+__pycache__/
