@@ -128,7 +128,7 @@ def recolor_icons():
 PHOTOS = {  # hash -> (output name, max width)
     "73a0193063": ("hero-robot-arm", 1400), "385d9174a7": ("hero-robot-arms-pair", 1400),
     "4848db2dd1": ("hero-agv", 1400), "9aa177d4f5": ("hero-ergonomics-worker", 1200),
-    "002356c983": ("hero-press-robots", 1400), "c7bf02069a": ("hero-body-in-white", 1400),
+    "002356c983": ("hero-press-robots", 1400),
     "9dcf5e13d3": ("hero-truck", 1200), "76fe86e9be": ("conveyor", 1200),
     "a2bfc847fe": ("bg-sky", 1800), "9190c4fc05": ("bg-meeting", 1800),
     "96170e674e": ("ame-3d-line", 1400), "d13ba804e6": ("tbo-layout-sim", 1600),

@@ -218,7 +218,7 @@ def build_home():
     </div>
     <div class="about-media panel">
       <div class="chev-bg small" aria-hidden="true"><i class="b1"></i><i class="b2"></i></div>
-      <img src="assets/img/hero-body-in-white.png" alt="Vehicle body-in-white structure" width="640" height="470" loading="lazy">
+      <img src="assets/img/ame-cell-3d.png" alt="3D model of a robotic assembly cell" width="640" height="470" loading="lazy">
     </div>
   </div>
 </section>
