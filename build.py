@@ -33,11 +33,10 @@ def plain(s):
     return s.replace("**", "")
 
 
-CHEVRON_SVG = (
-    '<svg class="chev" viewBox="0 0 60 40" aria-hidden="true">'
-    '<path d="M0 0h14l16 20-16 20H0l16-20z" fill="#1CB5F4"/>'
-    '<path d="M22 0h14l16 20-16 20H22l16-20z" fill="#A7ADB4"/></svg>'
-)
+def chev(rel):
+    """The double chevron cut from the IMS logo, used as the brand's graphic accent."""
+    return f'<img class="chev" src="{rel}assets/brand/ims-mark.png" alt="" width="331" height="335" loading="lazy">'
+
 ARROW = '<span class="arr" aria-hidden="true">&rsaquo;&rsaquo;</span>'
 
 
@@ -181,9 +180,6 @@ CHIP_ICONS = {
     "monitor": '<svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 12l3-3 3 2 4-4"/></svg>',
     "person": '<svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>',
     "nodes": '<svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v5M12 12.5 6.5 17M12 12.5l5.5 4.5"/></svg>',
-    "layers": '<svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5M3 18l9 5 9-5"/></svg>',
-    "pin": '<svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>',
-    "target": '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>',
 }
 HERO_CHIPS = [
     ("gear", "Design", "services/advanced-manufacturing-engineering.html"),
@@ -193,19 +189,10 @@ HERO_CHIPS = [
     ("person", "Ergonomics", "services/ergonomics-simulation-human-factors.html"),
     ("nodes", "Process engineering", "services/advanced-manufacturing-engineering.html"),
 ]
-HERO_TRUST = [
-    ("layers", "7 core services", "End-to-end manufacturing expertise"),
-    ("pin", "Saudi-based", "Proudly supporting Vision 2030"),
-    ("target", "Concept to execution", "From idea to real-world impact"),
-]
 
 
 def hero_chips(rel):
     return "".join(f'<li><a href="{rel}{href}">{CHIP_ICONS[ico]}{esc(label)}</a></li>' for ico, label, href in HERO_CHIPS)
-
-
-def hero_trust():
-    return "".join(f'<li>{CHIP_ICONS[ico]}<div><strong>{esc(t)}</strong><span>{esc(d)}</span></div></li>' for ico, t, d in HERO_TRUST)
 
 
 # ----------------------------------------------------------------- pages
@@ -214,7 +201,6 @@ def build_home():
     T = SITE["taglines"]
     A = C["about"]
     chips = hero_chips(rel)
-    trust = hero_trust()
     cards = "".join(service_card(s, rel) for s in SERVICES)
     about_ps = "".join(f"<p>{md(p)}</p>" for p in A["paragraphs"])
     body = f"""
@@ -229,8 +215,7 @@ def build_home():
         <a class="btn btn-ghost" href="contact.html">Request consultation</a>
       </div>
       <ul class="chips" aria-label="Capabilities">{chips}</ul>
-      <ul class="trust">{trust}</ul>
-      <p class="think">{esc(SITE['slogan'])}</p>
+      <p class="think"><img src="assets/brand/ims-mark.png" alt="" width="331" height="335">{esc(SITE['slogan'])}</p>
     </div>
     <div class="hero-visual">
       <picture>
@@ -342,7 +327,7 @@ def build_service(s, i):
 <section class="intro">
   <div class="wrap grid-2 v-center">
     <p class="lead big">{esc(s['intro'])}</p>
-    <div class="pillar-row right">{CHEVRON_SVG}<div class="pillar-words">{''.join(f'<span>{esc(p)}</span>' for p in SITE['taglines']['pillars'])}</div></div>
+    <div class="pillar-row right">{chev(rel)}<div class="pillar-words">{''.join(f'<span>{esc(p)}</span>' for p in SITE['taglines']['pillars'])}</div></div>
   </div>
 </section>
 <section class="samples">
@@ -433,14 +418,14 @@ def build_service(s, i):
 
 <section class="inputs">
   <div class="wrap">
-    <div class="sec-head with-chev">{CHEVRON_SVG}<h2>{md(s['inputs_heading'])}</h2></div>
+    <div class="sec-head with-chev">{chev(rel)}<h2>{md(s['inputs_heading'])}</h2></div>
     <div class="input-grid">{inputs}</div>
   </div>
 </section>
 
 <section class="deliverables">
   <div class="wrap">
-    <div class="sec-head with-chev">{CHEVRON_SVG}<h2>{md(s['deliverables_heading'])}</h2></div>
+    <div class="sec-head with-chev">{chev(rel)}<h2>{md(s['deliverables_heading'])}</h2></div>
     <div class="grid-2 gap deliv-grid">{delivs}</div>
   </div>
 </section>
