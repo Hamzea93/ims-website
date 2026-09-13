@@ -15,7 +15,7 @@
     "contact_note": "Contact is routed to a function (projects & proposals), not to a named executive. Phone and e-mail still to be confirmed by IMS.",
     "taglines": {
       "hero_kicker": "Saudi manufacturing engineering & digital transformation",
-      "hero_title": "Engineering Better Manufacturing Decisions.",
+      "hero_title": "Driving industrial transformation, from concept to execution.",
       "hero_lead": "From design and simulation to digital twin, ergonomics, and process optimization, IMS helps manufacturers think forward before they invest.",
       "pillars": [
         "Design.",
@@ -24,7 +24,7 @@
       ],
       "people": "People. Systems. Progress. Together.",
       "footer": "A stronger tomorrow through smarter manufacturing.",
-      "hero_title_html": "Engineering Better Manufacturing <span class=\"accent\">Decisions.</span>"
+      "hero_title_html": "Driving industrial transformation, <span class=\"accent\">from concept to execution.</span>"
     },
     "contact_team": {
       "label": "Projects & proposals",
