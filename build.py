@@ -355,11 +355,11 @@ def build_service(s, i):
     <div class="sec-head">{kicker('Before and after')}<h2>{esc(cp['heading'])}</h2></div>
     <div class="grid-2 gap">
       <figure class="cmp">
-        <div class="pair"><img src="{rel}assets/img/{cp['before']['src']}" alt="Layout before optimization" loading="lazy"><img src="{rel}assets/img/{cp['before']['src2']}" alt="Detail before optimization" loading="lazy"></div>
+        <div class="cmp-img"><img src="{rel}assets/img/{cp['before']['src']}" alt="Layout before optimization: {esc(cp['before']['label'])}" loading="lazy"></div>
         <figcaption><span class="tag red">Before</span> {esc(cp['before']['label'])}</figcaption>
       </figure>
       <figure class="cmp">
-        <div class="pair"><img src="{rel}assets/img/{cp['after']['src']}" alt="Layout after optimization" loading="lazy"><img src="{rel}assets/img/{cp['after']['src2']}" alt="Detail after optimization" loading="lazy"></div>
+        <div class="cmp-img"><img src="{rel}assets/img/{cp['after']['src']}" alt="Layout after optimization: {esc(cp['after']['label'])}" loading="lazy"></div>
         <figcaption><span class="tag green">After</span> {esc(cp['after']['label'])}</figcaption>
       </figure>
     </div>

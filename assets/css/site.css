@@ -217,8 +217,8 @@ section { padding: 72px 0; }
 .tag.amber { background: #fff4d6; color: #92400e; }
 .tag.green { background: #e2f7ea; color: #15803d; }
 .compare .cmp { margin: 0; }
-.compare .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: var(--gray); padding: 10px; border-radius: var(--radius); }
-.compare .pair img { width: 100%; aspect-ratio: 4/3; object-fit: cover; background: #fff; border: 1px solid var(--line); }
+.compare .cmp-img { display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; height: 300px; }
+.compare .cmp-img img { max-height: 100%; width: auto; max-width: 100%; object-fit: contain; image-rendering: auto; }
 .compare figcaption { padding: 12px 4px; font-family: var(--font-head); font-weight: 600; color: var(--navy); display: flex; gap: 10px; align-items: center; }
 .gallery { background: var(--gray); }
 .gal { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
