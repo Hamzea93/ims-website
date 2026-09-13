@@ -173,37 +173,81 @@ def service_card(s, rel):
 </a>"""
 
 
+
+CHIP_ICONS = {
+    "gear": '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+    "cube": '<svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></svg>',
+    "bars": '<svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>',
+    "monitor": '<svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 12l3-3 3 2 4-4"/></svg>',
+    "person": '<svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>',
+    "nodes": '<svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v5M12 12.5 6.5 17M12 12.5l5.5 4.5"/></svg>',
+    "layers": '<svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5M3 18l9 5 9-5"/></svg>',
+    "pin": '<svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+    "target": '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>',
+}
+HERO_CHIPS = [
+    ("gear", "Design", "services/advanced-manufacturing-engineering.html"),
+    ("cube", "Simulate", "services/throughput-buffer-optimization.html"),
+    ("bars", "Optimize", "services/continuous-improvement-processing.html"),
+    ("monitor", "Digital twin", "services/machine-transfer-optimization-virtual-twin.html"),
+    ("person", "Ergonomics", "services/ergonomics-simulation-human-factors.html"),
+    ("nodes", "Process engineering", "services/advanced-manufacturing-engineering.html"),
+]
+HERO_TRUST = [
+    ("layers", "7 core services", "End-to-end manufacturing expertise"),
+    ("pin", "Saudi-based", "Proudly supporting Vision 2030"),
+    ("target", "Concept to execution", "From idea to real-world impact"),
+]
+
+
+def hero_chips(rel):
+    return "".join(f'<li><a href="{rel}{href}">{CHIP_ICONS[ico]}{esc(label)}</a></li>' for ico, label, href in HERO_CHIPS)
+
+
+def hero_trust():
+    return "".join(f'<li>{CHIP_ICONS[ico]}<div><strong>{esc(t)}</strong><span>{esc(d)}</span></div></li>' for ico, t, d in HERO_TRUST)
+
+
 # ----------------------------------------------------------------- pages
 def build_home():
     rel = ""
     T = SITE["taglines"]
     A = C["about"]
-    pillars = "".join(f"<span>{esc(p)}</span>" for p in T["pillars"])
+    chips = hero_chips(rel)
+    trust = hero_trust()
     cards = "".join(service_card(s, rel) for s in SERVICES)
     about_ps = "".join(f"<p>{md(p)}</p>" for p in A["paragraphs"])
     body = f"""
-<section class="hero home-hero">
-  <div class="chev-bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
-  <div class="wrap grid-2">
+<section class="hero hero-split">
+  <div class="hero-photo" aria-hidden="true">
+    <picture>
+      <source srcset="assets/img/hero-robot-photo.webp" type="image/webp">
+      <img src="assets/img/hero-robot-photo.jpg" alt="" width="1800" height="1013" fetchpriority="high">
+    </picture>
+    <span class="hero-fade"></span>
+  </div>
+  <div class="chev-bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i></div>
+  <div class="wrap hero-grid">
     <div class="hero-text">
       {kicker(T['hero_kicker'])}
-      <h1>{esc(T['hero_title'])}</h1>
+      <h1>{T['hero_title_html']}</h1>
       <p class="lead">{esc(T['hero_lead'])}</p>
       <div class="actions">
-        <a class="btn btn-primary" href="services/index.html">Explore our services {ARROW}</a>
-        <a class="btn btn-ghost" href="contact.html">Talk to an engineer</a>
+        <a class="btn btn-primary" href="services/index.html">Explore services {ARROW}</a>
+        <a class="btn btn-ghost" href="contact.html">Request consultation</a>
       </div>
+      <ul class="chips" aria-label="Capabilities">{chips}</ul>
+      <ul class="trust">{trust}</ul>
+      <p class="think">{esc(SITE['slogan'])}</p>
     </div>
-    <div class="hero-media">
-      <img src="assets/img/hero-robot-arm.png" alt="Industrial robot arm" width="700" height="740" fetchpriority="high">
+    <div class="hero-visual" aria-hidden="true" style="background-image:url('assets/img/hero-robot-photo.jpg')">
+      <picture class="dash">
+        <source srcset="assets/img/hero-dashboard-panel.webp" type="image/webp">
+        <img src="assets/img/hero-dashboard-panel.png" alt="" width="1100" height="790">
+      </picture>
+      <p class="vertical">Automate<br>Optimize<br>Digitalize<br>for a<br>stronger<br>tomorrow</p>
+      <div class="vision-card"><span>Advancing Saudi industry</span><strong>Vision 2030</strong></div>
     </div>
-  </div>
-</section>
-
-<section class="pillars">
-  <div class="wrap">
-    <div class="pillar-row">{CHEVRON_SVG}<div class="pillar-words">{pillars}</div></div>
-    <p class="pillar-sub">{esc(SITE['slogan'])}</p>
   </div>
 </section>
 

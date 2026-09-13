@@ -72,6 +72,7 @@ def data_uri(rel):
 def rewrite(html, page_dir):
     html = re.sub(r'href="([^"]+)"', lambda m: f'href="{link_to_hash(m.group(1), page_dir)}"', html)
     html = re.sub(r'src="([^"]*assets/[^"]+)"', lambda m: f'src="" data-img="{data_uri(m.group(1))}"', html)
+    html = re.sub(r"style=\"background-image:url\('([^']*assets/[^']+)'\)\"", lambda m: f'data-bg="{data_uri(m.group(1))}"', html)
     return html
 
 
@@ -102,6 +103,7 @@ router_js = """
 (function(){
   var IMG = window.__IMG__;
   document.querySelectorAll('img[data-img]').forEach(function(i){ i.src = IMG[i.getAttribute('data-img')] || ''; });
+  document.querySelectorAll('[data-bg]').forEach(function(e){ e.style.backgroundImage = 'url(' + IMG[e.getAttribute('data-bg')] + ')'; });
   var titles = window.__TITLES__;
   function show(){
     var h = (location.hash || '#home').slice(1);

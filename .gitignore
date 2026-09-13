@@ -11,3 +11,5 @@ __pycache__/
 source/legal/
 # Single-file bundle (large, built on demand)
 dist/
+# Hero concept originals (large)
+source/hero/
