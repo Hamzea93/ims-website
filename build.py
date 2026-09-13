@@ -89,6 +89,7 @@ def header(rel, active):
   <div class="wrap">
     <a class="brand" href="{rel}index.html" aria-label="{esc(SITE['full_name'])} home">
       <img src="{rel}assets/brand/ims-wordmark.png" alt="{esc(SITE['full_name'])}" width="170" height="50">
+      <span class="brand-desc"><b>{esc(SITE['full_name'])}</b><i>{esc(SITE['slogan'])}</i></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
     <nav id="nav" class="nav">
