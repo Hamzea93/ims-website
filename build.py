@@ -219,14 +219,6 @@ def build_home():
     about_ps = "".join(f"<p>{md(p)}</p>" for p in A["paragraphs"])
     body = f"""
 <section class="hero hero-split">
-  <div class="hero-photo" aria-hidden="true">
-    <picture>
-      <source srcset="assets/img/hero-robot-photo.webp" type="image/webp">
-      <img src="assets/img/hero-robot-photo.jpg" alt="" width="1800" height="1013" fetchpriority="high">
-    </picture>
-    <span class="hero-fade"></span>
-  </div>
-  <div class="chev-bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i></div>
   <div class="wrap hero-grid">
     <div class="hero-text">
       {kicker(T['hero_kicker'])}
@@ -240,12 +232,11 @@ def build_home():
       <ul class="trust">{trust}</ul>
       <p class="think">{esc(SITE['slogan'])}</p>
     </div>
-    <div class="hero-visual" aria-hidden="true" style="background-image:url('assets/img/hero-robot-photo.jpg')">
-      <picture class="dash">
-        <source srcset="assets/img/hero-dashboard-panel.webp" type="image/webp">
-        <img src="assets/img/hero-dashboard-panel.png" alt="" width="1100" height="790">
+    <div class="hero-visual">
+      <picture>
+        <source srcset="assets/img/hero-composite.webp" type="image/webp">
+        <img src="assets/img/hero-composite.jpg" alt="Robotic assembly cell with a production performance dashboard: design, simulate, optimize" width="1254" height="1254" fetchpriority="high">
       </picture>
-      <p class="vertical">Automate<br>Optimize<br>Digitalize<br>for a<br>stronger<br>tomorrow</p>
     </div>
   </div>
 </section>
