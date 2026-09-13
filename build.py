@@ -180,14 +180,18 @@ CHIP_ICONS = {
     "monitor": '<svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 12l3-3 3 2 4-4"/></svg>',
     "person": '<svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>',
     "nodes": '<svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v5M12 12.5 6.5 17M12 12.5l5.5 4.5"/></svg>',
+    "truck": '<svg viewBox="0 0 24 24"><path d="M2 7h11v9H2zM13 11h4l3 3v2h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="16.5" cy="18" r="2"/></svg>',
+    "cycle": '<svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-15.6 6.2M3 12a9 9 0 0 1 15.6-6.2"/><path d="M21 3v6h-6M3 21v-6h6"/></svg>',
+    "wrench": '<svg viewBox="0 0 24 24"><path d="M14.7 6.3a4.5 4.5 0 0 0-5.9 5.9L3 18l3 3 5.8-5.8a4.5 4.5 0 0 0 5.9-5.9l-2.7 2.7-2.3-2.3z"/></svg>',
 }
-HERO_CHIPS = [
-    ("gear", "Design", "services/advanced-manufacturing-engineering.html"),
-    ("cube", "Simulate", "services/throughput-buffer-optimization.html"),
-    ("bars", "Optimize", "services/continuous-improvement-processing.html"),
-    ("monitor", "Digital twin", "services/machine-transfer-optimization-virtual-twin.html"),
-    ("person", "Ergonomics", "services/ergonomics-simulation-human-factors.html"),
+HERO_CHIPS = [  # one chip per service, in service order
     ("nodes", "Process engineering", "services/advanced-manufacturing-engineering.html"),
+    ("truck", "Logistics & material flow", "services/logistics-material-flow-optimization.html"),
+    ("bars", "Throughput & buffers", "services/throughput-buffer-optimization.html"),
+    ("person", "Ergonomics", "services/ergonomics-simulation-human-factors.html"),
+    ("cycle", "Continuous improvement", "services/continuous-improvement-processing.html"),
+    ("monitor", "Digital twin", "services/machine-transfer-optimization-virtual-twin.html"),
+    ("wrench", "Special projects", "services/custom-solutions-special-projects.html"),
 ]
 
 
