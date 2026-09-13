@@ -48,6 +48,10 @@ def build_logo():
     x0, y0, x1, y1 = 123 - pad, 294 - pad, 1330 + pad, 816 + pad
     full.crop((x0, y0, x1, y1)).save(os.path.join(OUT_BRAND, "ims-logo.png"), optimize=True)
     rev.crop((x0, y0, x1, y1)).save(os.path.join(OUT_BRAND, "ims-logo-white.png"), optimize=True)
+    # lockup: wordmark + descriptor line (no rule, no tagline) for the site header
+    ly0, ly1 = 294 - pad, 702 + pad
+    full.crop((x0, ly0, x1, ly1)).save(os.path.join(OUT_BRAND, "ims-lockup.png"), optimize=True)
+    rev.crop((x0, ly0, x1, ly1)).save(os.path.join(OUT_BRAND, "ims-lockup-white.png"), optimize=True)
     wy0, wy1 = 294 - pad, 616 + pad
     full.crop((x0, wy0, x1, wy1)).save(os.path.join(OUT_BRAND, "ims-wordmark.png"), optimize=True)
     rev.crop((x0, wy0, x1, wy1)).save(os.path.join(OUT_BRAND, "ims-wordmark-white.png"), optimize=True)
