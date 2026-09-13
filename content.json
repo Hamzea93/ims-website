@@ -8,9 +8,11 @@
     "email": "info@imsystems.com.sa",
     "phone": "",
     "address_lines": [
-      "Kingdom of Saudi Arabia"
+      "Building No. 2776, Sidra Street",
+      "Qurtubah District, Secondary No. 6899",
+      "Riyadh 13245, Kingdom of Saudi Arabia"
     ],
-    "contact_note": "Address, phone and e-mail to be confirmed from the IMS registration documents.",
+    "contact_note": "Address and contact person taken from the IMS-CAT Master Services Agreement (11 Sep 2026). Phone and e-mail still to be confirmed by IMS.",
     "taglines": {
       "hero_kicker": "Engineer the decision. De-risk the capital.",
       "hero_title": "Driving industrial transformation, from concept to execution",
@@ -22,12 +24,16 @@
       ],
       "people": "People. Systems. Progress. Together.",
       "footer": "A stronger tomorrow through smarter manufacturing."
+    },
+    "contact_person": {
+      "name": "Nasser Ibrahim Aldossary",
+      "title": "CEO & Co-Founder"
     }
   },
   "about": {
     "kicker": "About IMS",
     "heading": "From design to production, we support our partners through every stage",
-    "intro": "**Integrated Manufacturing Systems (IMS)** is a Saudi engineering and consulting company that provides a comprehensive range of body, chassis, and engineering support and solutions to manufacturers in the Kingdom and the region.",
+    "intro": "**Integrated Manufacturing Systems (IMS)** is a Riyadh-based engineering and consulting company that provides a comprehensive range of body, chassis, and engineering support and solutions to manufacturers in the Kingdom of Saudi Arabia and the region. Our project-specific engineering and design services form part of a consulting portfolio that serves private-sector manufacturers, the Ministry of Industry and other relevant authorities in the Kingdom.",
     "paragraphs": [
       "**IMS** delivers specialized services to support the design and manufacture of vehicle body systems, components, assemblies, and complete vehicle frames.",
       "We guide our partners from concept to execution; optimizing product design for manufacturing, managing global programs, and ensuring quality across every stage of the project.",

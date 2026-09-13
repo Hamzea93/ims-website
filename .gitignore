@@ -7,3 +7,5 @@ wordpress/
 Thumbs.db
 .DS_Store
 __pycache__/
+# Legal agreements: never publish
+source/legal/

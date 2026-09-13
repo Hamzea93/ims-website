@@ -112,6 +112,8 @@ def footer(rel):
     svc = "".join(f'<li><a href="{rel}services/{s["slug"]}.html">{esc(s["short"])}</a></li>' for s in SERVICES)
     addr = "<br>".join(esc(a) for a in SITE["address_lines"])
     phone = f'<li><a href="tel:{esc(SITE["phone"])}">{esc(SITE["phone"])}</a></li>' if SITE.get("phone") else ""
+    cp = SITE.get("contact_person")
+    person_li = f'<li><strong>{esc(cp["name"])}</strong><br><span class="muted">{esc(cp["title"])}</span></li>' if cp else ""
     return f"""</main>
 <footer class="site-footer">
   <div class="wrap grid-4">
@@ -134,6 +136,7 @@ def footer(rel):
     <div>
       <h4>Contact</h4>
       <ul class="f-links">
+        {person_li}
         <li><a href="mailto:{esc(SITE['email'])}">{esc(SITE['email'])}</a></li>
         {phone}
         <li>{addr}</li>
@@ -437,6 +440,8 @@ def build_contact():
     addr = "<br>".join(esc(a) for a in SITE["address_lines"])
     phone = f'<div class="c-item"><h3>Phone</h3><p><a href="tel:{esc(SITE["phone"])}">{esc(SITE["phone"])}</a></p></div>' if SITE.get("phone") else ""
     svc_opts = "".join(f'<li><a href="services/{s["slug"]}.html">{esc(s["short"])}</a></li>' for s in SERVICES)
+    cp = SITE.get("contact_person")
+    person_block = f'<div class="c-item"><h3>Your contact</h3><p><strong>{esc(cp["name"])}</strong><br><span class="muted">{esc(cp["title"])}</span></p></div>' if cp else ""
     body = f"""
 <section class="hero page-hero">
   <div class="chev-bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i></div>
@@ -450,6 +455,7 @@ def build_contact():
 <section class="contact">
   <div class="wrap grid-2 gap">
     <div class="panel c-card">
+      {person_block}
       <div class="c-item"><h3>E-mail</h3><p><a class="mail" href="mailto:{esc(SITE['email'])}">{esc(SITE['email'])}</a></p></div>
       {phone}
       <div class="c-item"><h3>Office</h3><p>{addr}</p></div>
