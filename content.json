@@ -12,7 +12,7 @@
       "Qurtubah District, Secondary No. 6899",
       "Riyadh 13245, Kingdom of Saudi Arabia"
     ],
-    "contact_note": "Address and contact person taken from the IMS-CAT Master Services Agreement (11 Sep 2026). Phone and e-mail still to be confirmed by IMS.",
+    "contact_note": "Contact is routed to a function (projects & proposals), not to a named executive. Phone and e-mail still to be confirmed by IMS.",
     "taglines": {
       "hero_kicker": "Engineer the decision. De-risk the capital.",
       "hero_title": "Driving industrial transformation, from concept to execution",
@@ -25,9 +25,9 @@
       "people": "People. Systems. Progress. Together.",
       "footer": "A stronger tomorrow through smarter manufacturing."
     },
-    "contact_person": {
-      "name": "Nasser Ibrahim Aldossary",
-      "title": "CEO & Co-Founder"
+    "contact_team": {
+      "label": "Projects & proposals",
+      "desc": "Every enquiry is reviewed by our engineering team, who reply with the next steps and, where appropriate, a scoped proposal."
     }
   },
   "about": {

@@ -259,6 +259,7 @@ section { padding: 72px 0; }
 .c-card .c-item { margin-bottom: 22px; }
 .c-card h3 { font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; color: var(--silver); margin-bottom: .3em; }
 .c-card p { margin: 0; font-size: 1.05rem; }
+.c-card .team-desc { font-size: .95rem; color: var(--graphite); }
 .muted { color: var(--muted); font-size: .92rem; }
 .site-footer .muted { color: rgba(255,255,255,.6); }
 .site-footer strong { color: #fff; }

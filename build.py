@@ -111,8 +111,7 @@ def footer(rel):
     svc = "".join(f'<li><a href="{rel}services/{s["slug"]}.html">{esc(s["short"])}</a></li>' for s in SERVICES)
     addr = "<br>".join(esc(a) for a in SITE["address_lines"])
     phone = f'<li><a href="tel:{esc(SITE["phone"])}">{esc(SITE["phone"])}</a></li>' if SITE.get("phone") else ""
-    cp = SITE.get("contact_person")
-    person_li = f'<li><strong>{esc(cp["name"])}</strong><br><span class="muted">{esc(cp["title"])}</span></li>' if cp else ""
+    person_li = ""
     return f"""</main>
 <footer class="site-footer">
   <div class="wrap grid-4">
@@ -445,8 +444,8 @@ def build_contact():
     phone = f'<div class="c-item"><h3>Phone</h3><p><a href="tel:{esc(SITE["phone"])}">{esc(SITE["phone"])}</a></p></div>' if SITE.get("phone") else ""
     svc_opts = "".join(f'<li><a href="services/{s["slug"]}.html">{esc(s["short"])}</a></li>' for s in SERVICES)
     topics = json.dumps({x["slug"]: x["title"] for x in SERVICES})
-    cp = SITE.get("contact_person")
-    person_block = f'<div class="c-item"><h3>Your contact</h3><p><strong>{esc(cp["name"])}</strong><br><span class="muted">{esc(cp["title"])}</span></p></div>' if cp else ""
+    team = SITE.get("contact_team")
+    person_block = f'<div class="c-item"><h3>{esc(team["label"])}</h3><p class="team-desc">{esc(team["desc"])}</p></div>' if team else ""
     body = f"""
 <section class="hero page-hero">
   <div class="chev-bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i></div>
