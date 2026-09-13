@@ -8,6 +8,7 @@ CSS and JS are inlined; every image is embedded once as a data URI and assigned
 to <img> tags at load time (so repeated icons do not bloat the file).
 """
 import base64
+import html as html_mod
 import json
 import os
 import re
@@ -90,7 +91,7 @@ titles = {}
 sections = []
 for pid, path in PAGES:
     src = read(path)
-    titles[pid] = re.search(r"<title>(.*?)</title>", src, re.S).group(1)
+    titles[pid] = html_mod.unescape(re.search(r"<title>(.*?)</title>", src, re.S).group(1))
     main = between(src, '<main id="main">', "</main>")
     main = main[len('<main id="main">'):-len("</main>")]
     page_dir = "services" if path.startswith("services/") else ""
@@ -114,7 +115,7 @@ router_js = """
     });
     var nav = document.getElementById('nav'); if (nav) nav.classList.remove('open');
     var sub = document.querySelector('.has-sub'); if (sub) sub.classList.remove('open');
-    if (h === 'about') { var ab = document.getElementById('about'); if (ab) ab.scrollIntoView(); }
+    if (h === 'about') { var ab = document.getElementById('about'); if (ab) window.scrollTo(0, ab.getBoundingClientRect().top + window.scrollY - 84); }
     else window.scrollTo(0, 0);
   }
   window.addEventListener('hashchange', show);
@@ -127,7 +128,7 @@ doc = f"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{titles['home']}</title>
+<title>{html_mod.escape(titles['home'])}</title>
 <meta name="description" content="{SITE['description']}">
 <link rel="icon" href="{{FAVICON}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
